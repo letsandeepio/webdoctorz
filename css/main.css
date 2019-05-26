@@ -1,0 +1,112 @@
+#js--nav-links li {
+  display: inline-block;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-logo {
+  background-color: aquamarine;
+  color: black;
+  letter-spacing: 5px;
+  padding: 0px 5px;
+}
+
+.step {
+  border-radius: 50px;
+  width: 33px;
+  height: 33px;
+  line-height: 33px;
+  margin: 0 auto;
+  background: #ffdd57;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: .9px;
+  text-align: center;
+  color: #282d3c;
+  margin-bottom: 10px;
+}
+
+.wireframe:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 140px;
+  top: 110px;
+  width: 75%;
+  z-index: -1;
+  border-bottom: 3px dashed #d3d9e5;
+}
+
+.center-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+.margin-bottom-xl {
+  margin-bottom: 50px;
+}
+
+.divider {
+  color: black;
+  margin-top: 20px;
+  border-bottom: 1px solid lightgrey;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.illustration {
+  width: 150px;
+}
+
+.column.has-vertically-aligned-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.features.container.content {
+  max-width: 810px;
+}
+
+/*text animation */
+
+.ml4 {
+  position: relative;
+  font-weight: 900;
+  font-size: 4.5em;
+}
+
+.ml4 .letters {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0.3em;
+  right: 0;
+  opacity: 0;
+}
