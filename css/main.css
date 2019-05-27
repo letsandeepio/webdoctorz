@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #js--nav-links li {
   display: inline-block;
 }
@@ -38,6 +42,12 @@
   width: 75%;
   z-index: -1;
   border-bottom: 3px dashed #d3d9e5;
+  visibility: hidden;
+  transition: visibility 1s;
+}
+
+.wireframe.show:after {
+  visibility: visible;
 }
 
 .center-items {
@@ -109,4 +119,24 @@
   top: 0.3em;
   right: 0;
   opacity: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .wireframe:after {
+    display: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .wireframe:after {
+    display: none;
+  }
+}
+
+.js--wp-1, .js--wp-2, .js--wp-3, .js--wp-4, .js--wp-5, .js--wp-6, .js--wp-7, .js--wp-8, .js--wp-9, .js--wp-10, .js--wp-11, .js--wp-12, .js--wp-13, .js--wp-14, .js--wp-16, .js--wp-17, .js--wp-18, .js--wp-19, .js--wp-20 {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
 }
